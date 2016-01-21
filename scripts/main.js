@@ -12,7 +12,7 @@ app.config(['$routeProvider', function($routeProvider){
 			controller: 'MainCtrl as mainCtrl'
 		})
 
-		.when('/underContruction', {
+		.when('/underConstruction', {
 			templateUrl: 'templates/underConstruction.html',
 			controller: 'MainCtrl as mainCtrl'
 		})
