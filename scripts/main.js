@@ -7,11 +7,17 @@ app.config(['$routeProvider', function($routeProvider){
 
 	//route for main song view
 	$routeProvider
-		.when('/', {
+		.when('/home', {
 			templateUrl: 'templates/homePage.html',
 			controller: 'MainCtrl as mainCtrl'
 		})
-    .otherwise({ redirectTo: '/' });
+
+		.when('/underContruction', {
+			templateUrl: 'templates/underConstruction.html',
+			controller: 'MainCtrl as mainCtrl'
+		})
+
+    .otherwise({ redirectTo: '/underConstruction' });
 
 }]);
 
