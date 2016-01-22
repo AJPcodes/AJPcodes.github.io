@@ -1,5 +1,5 @@
-app.controller('MainCtrl', ['$scope', function($scope) {
-
-	this.test = "test";
-
-}]);
+app.controller('MainCtrl', function($scope, $mdSidenav) {
+  this.openLeftMenu = function() {
+    $mdSidenav('left').toggle();
+  };
+});

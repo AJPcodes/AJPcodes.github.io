@@ -4,24 +4,40 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>AJP Codes</title>
+	<link href="lib/bower_components/angular-material/angular-material.css" rel="stylesheet" />
 	<link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
-<div ng-app="AJPCodes">
+<body ng-app="AJPCodes" ng-controller="MainCtrl as mainCtrl">
 
-		<div ng-view></div>
+    <md-toolbar layout="row" layout-align="center" class="md-whiteframe-z2">
+      <h1>AJP Codes</h1>
 
-	<footer>
-	    <p></p>
-	<footer>
+			<md-button ng-click="mainCtrl.openLeftMenu()">
+      	Explore
+    	</md-button>
 
-</div>
+    </md-toolbar>
+
+    <md-sidenav flex="20" md-component-id="left" class="md-sidenav-left" class="md-whiteframe-z4 md-accent" layout-align="center center">
+			<p>Sidebar</p>
+    </md-sidenav>
+
+		<div ng-view>
+			<!-- Content from Views appears here -->
+		</div>
+
   <!-- jQuery -->
 	<script src="lib/bower_components/jQuery/dist/jquery.min.js"></script>
 	<!-- Angular -->
 	<script src="lib/bower_components/angular/angular.min.js"></script>
 	<!-- Angular Route -->
 	<script src="lib/bower_components/angular-route/angular-route.min.js"></script>
+	<!-- Angular Material -->
+  <script src="lib/bower_components/angular-animate/angular-animate.js" type="text/javascript" ></script>
+  <script src="lib/bower_components/angular-aria/angular-aria.js" type="text/javascript" ></script>
+	<script src="lib/bower_components/angular-material/angular-material.min.js"></script>
+
+
 
 	<script src="scripts/main.js"></script>
 	<!-- factories! -->
