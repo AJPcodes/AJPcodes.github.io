@@ -8,3 +8,30 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Bangers, Impact, "Arial Black", sans-serif; }
+
+/* Profile Card Styling*/
+div#profileCard {
+  overflow: hidden; }
+  div#profileCard img {
+    transition: all ease 0.5s;
+    border: 5px solid black;
+    border-radius: 50%;
+    height: 10em;
+    width: 10em; }
+  div#profileCard p {
+    position: relative;
+    right: -1000px; }
+  div#profileCard p#item1 {
+    transition: all ease 0.5s; }
+  div#profileCard p#item2 {
+    transition: all ease 0.75s; }
+  div#profileCard p#item3 {
+    transition: all ease 1s; }
+
+div#profileCard:hover img {
+  border: 5px solid black;
+  border-radius: 10px; }
+
+div#profileCard:hover p {
+  position: relative;
+  right: 0px; }

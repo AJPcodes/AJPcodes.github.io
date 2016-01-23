@@ -12,14 +12,33 @@
     <md-toolbar layout="row" layout-align="center" class="md-whiteframe-z2">
       <h1>AJP Codes</h1>
 
-			<md-button ng-click="mainCtrl.openLeftMenu()">
+			<md-button class="md-accent" ng-click="mainCtrl.openLeftMenu()">
       	Explore
     	</md-button>
 
     </md-toolbar>
 
-    <md-sidenav flex="20" md-component-id="left" class="md-sidenav-left" class="md-whiteframe-z4 md-accent" layout-align="center center">
-			<p>Sidenav</p>
+
+    <md-sidenav flex="25" md-component-id="left" class="md-sidenav-left md-whiteframe-z4 md-accent" layout-align="center center" class="md-accent">
+
+			<div layout="column" layout-padding layout-fill style="padding: 15px;" ng-cloak>
+			  <md-whiteframe class="md-whiteframe-1dp" layout layout-align="center center">
+			    <md-button class="md-accent">Profile</md-button>
+			  </md-whiteframe>
+			  <md-whiteframe class="md-whiteframe-0dp" layout layout-align="center center">
+			    <md-button class="md-primary">Skills</md-button>
+			  </md-whiteframe>
+			  <md-whiteframe class="md-whiteframe-0dp" layout layout-align="center center">
+			    <md-button class="md-primary">Experience</md-button>
+			  </md-whiteframe>
+			  <md-whiteframe class="md-whiteframe-0dp" layout layout-align="center center">
+			    <md-button class="md-primary">Projects</md-button>
+			  </md-whiteframe>
+			  <md-whiteframe class="md-whiteframe-0dp" layout layout-align="center center">
+			    <md-button class="md-primary">Contact</md-button>
+			  </md-whiteframe>
+			</div>
+
     </md-sidenav>
 
 		<div ng-view>
