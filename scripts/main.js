@@ -17,6 +17,10 @@ app.config(['$routeProvider', function($routeProvider){
 			// controller: 'MainCtrl as mainCtrl'
 		})
 
+		.when('/resume', {
+			templateUrl: 'templates/resume.html'
+			// controller: 'MainCtrl as mainCtrl'
+		})
 		.when('/underConstruction', {
 			templateUrl: 'templates/underConstruction.html'
 			// controller: 'MainCtrl as mainCtrl'
