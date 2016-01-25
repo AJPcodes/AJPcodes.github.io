@@ -43,11 +43,12 @@ div#mainContent {
 
 /* SideNav Styling*/
 #sideNav {
+  transition: all ease 0.75s;
   background-color: #9E9E9E;
-  visibility: hidden;
+  height: 50%;
   position: fixed;
-  top: 10em;
-  left: 5em;
+  top: -10em;
+  left: -15em;
   z-index: 10; }
   #sideNav a {
     height: 2em;
@@ -55,12 +56,10 @@ div#mainContent {
     text-shadow: 1px 1px 0px black; }
 
 #sideNav.active {
-  visibility: visible;
   position: fixed;
   top: 10em;
-  left: 5em;
-  z-index: 10;
-  height: 50%; }
+  left: 2em;
+  z-index: 10; }
   #sideNav.active a:hover {
     text-shadow: 2px 2px 1px black; }
 
