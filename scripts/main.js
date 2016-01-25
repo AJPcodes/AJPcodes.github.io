@@ -10,23 +10,23 @@ app.config(function($mdThemingProvider) {
 //Setting Up routes
 app.config(['$routeProvider', function($routeProvider){
 
-	//route for main song view
-	$routeProvider
-		.when('/home', {
-			templateUrl: 'templates/homePage.html'
-			// controller: 'MainCtrl as mainCtrl'
-		})
+	// //route for main song view
+	// $routeProvider
+	// 	.when('/', {
+	// 		templateUrl: 'templates/homePage.html'
+	// 		// controller: 'MainCtrl as mainCtrl'
+	// 	})
 
-		.when('/resume', {
-			templateUrl: 'templates/resume.html'
-			// controller: 'MainCtrl as mainCtrl'
-		})
-		.when('/underConstruction', {
-			templateUrl: 'templates/underConstruction.html'
-			// controller: 'MainCtrl as mainCtrl'
-		})
+	// 	// .when('/resume', {
+	// 	// 	templateUrl: 'templates/resume.html'
+	// 	// 	// controller: 'MainCtrl as mainCtrl'
+	// 	// })
+	// 	// .when('/underConstruction', {
+	// 	// 	templateUrl: 'templates/underConstruction.html'
+	// 	// 	// controller: 'MainCtrl as mainCtrl'
+	// 	// })
 
-    .otherwise({ redirectTo: '/underConstruction' });
+ //    .otherwise({ redirectTo: '/' });
 
 }]);
 

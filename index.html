@@ -17,32 +17,21 @@
     	</md-button>
 
     </md-toolbar>
+<!--
+    <md-sidenav flex="25" md-component-id="left" class="md-sidenav-left md-whiteframe-z4 md-accent" layout-align="center" class="md-accent"> -->
 
+			<div id="sideNav" ng-include src="'templates/sideNav.html'"></div>
 
-    <md-sidenav flex="25" md-component-id="left" class="md-sidenav-left md-whiteframe-z4 md-accent" layout-align="center center" class="md-accent">
+<!-- 	  </md-sidenav> -->
 
-			<div layout="column" layout-padding layout-fill style="padding: 15px;" ng-cloak>
-			  <md-whiteframe class="md-whiteframe-1dp" layout layout-align="center center">
-			    <md-button class="md-accent">Profile</md-button>
-			  </md-whiteframe>
-			  <md-whiteframe class="md-whiteframe-0dp" layout layout-align="center center">
-			    <md-button class="md-primary">Skills</md-button>
-			  </md-whiteframe>
-			  <md-whiteframe class="md-whiteframe-0dp" layout layout-align="center center">
-			    <md-button class="md-primary">Experience</md-button>
-			  </md-whiteframe>
-			  <md-whiteframe class="md-whiteframe-0dp" layout layout-align="center center">
-			    <md-button class="md-primary">Projects</md-button>
-			  </md-whiteframe>
-			  <md-whiteframe class="md-whiteframe-0dp" layout layout-align="center center">
-			    <md-button class="md-primary">Contact</md-button>
-			  </md-whiteframe>
-			</div>
+		<div id="mainContent">
 
-    </md-sidenav>
+			<div id="profile" ng-include src="'templates/profile.html'"></div>
+			<div id="skills" ng-include src="'templates/skills.html'"></div>
+			<div id="experience" ng-include src="'templates/experience.html'"></div>
+			<div id="projects" ng-include src="'templates/projects.html'"></div>
+			<div id="contact" ng-include src="'templates/contact.html'"></div>
 
-		<div ng-view>
-			<!-- Content from Views appears here -->
 		</div>
 
   <!-- jQuery -->

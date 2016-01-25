@@ -9,16 +9,72 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: Bangers, Impact, "Arial Black", sans-serif; }
 
+md-content#profile,
+md-content#experience,
+md-content#contact {
+  background-color: #B2EBF2; }
+  md-content#profile .md-subheader-content,
+  md-content#experience .md-subheader-content,
+  md-content#contact .md-subheader-content {
+    background-color: #00BCD4; }
+
+md-content#skills,
+md-content#projects
+md-content#contact {
+  background-color: #F5F5F5; }
+  md-content#skills .md-subheader-content,
+  md-content#projects
+md-content#contact .md-subheader-content {
+    background-color: #9E9E9E; }
+
+/* Top Toolbar Styling*/
+md-toolbar {
+  position: fixed;
+  top: 0px;
+  height: 5em; }
+  md-toolbar span {
+    text-shadow: 1px 1px 0px black;
+    color: #B2EBF2; }
+  md-toolbar span:hover {
+    text-shadow: 2px 2px 1px black; }
+
+div#mainContent {
+  margin-top: 6em; }
+
+/* SideNav Styling*/
+#sideNav {
+  background-color: #9E9E9E;
+  visibility: hidden;
+  position: fixed;
+  top: 10em;
+  left: 5em;
+  z-index: 10; }
+  #sideNav a {
+    height: 2em;
+    color: #B2EBF2;
+    text-shadow: 1px 1px 0px black; }
+
+#sideNav.active {
+  visibility: visible;
+  position: fixed;
+  top: 10em;
+  left: 5em;
+  z-index: 10;
+  height: 50%; }
+  #sideNav.active a:hover {
+    text-shadow: 2px 2px 1px black; }
+
 /* Profile Card Styling*/
 div#profileCard {
   overflow: hidden; }
   div#profileCard img {
-    transition: all ease 0.5s;
+    margin-top: 2em;
+    transition: all ease 0.25s;
     border: 5px solid black;
     border-radius: 50%;
     height: 10em;
     width: 10em; }
-  div#profileCard p {
+  div#profileCard > p {
     position: relative;
     right: -1000px; }
   div#profileCard p#item1 {
@@ -27,6 +83,11 @@ div#profileCard {
     transition: all ease 0.75s; }
   div#profileCard p#item3 {
     transition: all ease 1s; }
+  div#profileCard div#aboutMe {
+    text-align: center;
+    transition: all ease .5s;
+    transition-delay: .5s;
+    color: transparent; }
 
 div#profileCard:hover img {
   border: 5px solid black;
@@ -35,3 +96,6 @@ div#profileCard:hover img {
 div#profileCard:hover p {
   position: relative;
   right: 0px; }
+
+div#profileCard:hover div#aboutMe {
+  color: inherit; }
