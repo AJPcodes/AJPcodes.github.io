@@ -11,6 +11,7 @@ app.controller('MainCtrl', function($scope, $location, $anchorScroll) {
   this.scrollTo = function(id) {
       $location.hash(id);
       $anchorScroll();
+      $anchorScroll.yOffset = 100;
    }
 
   // this.hoverIn = function(elementId) {

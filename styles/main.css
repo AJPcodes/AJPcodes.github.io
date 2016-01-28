@@ -49,9 +49,10 @@ div#mainContent {
   transition: all ease 0.75s;
   background-color: #9E9E9E;
   height: 50%;
+  width: 10em;
   position: fixed;
-  top: -10em;
-  left: -15em;
+  top: -15em;
+  left: -20em;
   z-index: 10; }
   #sideNav a {
     height: 2em;
@@ -61,23 +62,28 @@ div#mainContent {
 #sideNav.active {
   position: fixed;
   top: 10em;
-  left: 2em;
+  left: -2em;
   z-index: 10; }
   #sideNav.active md-whiteframe:hover {
-    box-shadow: 1px 1px 10px black, -1px -1px 4px black; }
+    box-shadow: -2px -2px 10px black;
+    transform: scale(1.1); }
   #sideNav.active a:hover {
     text-shadow: 2px 2px 1px #9E9E9E; }
 
 /* Profile Card Styling*/
 div#profileCard {
+  height: 40em;
   overflow: hidden; }
   div#profileCard img {
     margin-top: 2em;
     transition: all ease 0.25s;
     border: 5px solid black;
     border-radius: 50%;
-    height: 10em;
-    width: 10em; }
+    height: 15em;
+    width: 15em; }
+  div#profileCard img:hover {
+    height: 15.5em;
+    width: 15.5em; }
   div#profileCard > p {
     position: relative;
     right: -1000px; }
@@ -94,6 +100,8 @@ div#profileCard {
     color: transparent; }
 
 div#profileCard.active img {
+  height: 10em;
+  width: 10em;
   border: 5px solid black;
   border-radius: 10px; }
 

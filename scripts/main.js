@@ -30,3 +30,19 @@ app.config(['$routeProvider', function($routeProvider){
 
 }]);
 
+app.directive('scrollToItem', function($anchorScroll) {
+    return {
+        restrict: 'A',
+        scope: {
+            scrollTo: "@"
+        },
+        link: function(scope, $elm,attr) {
+
+            $elm.on('click', function() {
+            	//scroll to sections with 100px offset for the toolbar
+                $('html,body').animate({scrollTop: ($(scope.scrollTo).offset().top - 100) }, "slow");
+
+            });
+
+        }
+    }})
