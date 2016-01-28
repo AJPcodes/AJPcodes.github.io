@@ -14,15 +14,4 @@ app.controller('MainCtrl', function($scope, $location, $anchorScroll) {
       $anchorScroll.yOffset = 100;
    }
 
-  // this.hoverIn = function(elementId) {
-  // 	angular.element('#' + elementId).toggleClass('md-whiteframe-z0');
-  // 	angular.element('#' + elementId).toggleClass('md-whiteframe-z1');
-  // }
-
-  // this.hoverOut = function(elementId) {
-  // 	angular.element('#' + elementId).toggleClass('md-whiteframe-z0');
-  // 	angular.element('#' + elementId).toggleClass('md-whiteframe-z1');
-  // }
-
-
 });
