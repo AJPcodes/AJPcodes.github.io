@@ -1,18 +1,27 @@
-app.controller('MainCtrl', function($scope, $mdSidenav) {
+app.controller('MainCtrl', function($scope, $location, $anchorScroll) {
 
-  this.openLeftMenu = function() {
-    angular.element('#sideNav').toggleClass('active');
-  }
+  // this.openLeftMenu = function() {
+  //   angular.element('#sideNav').toggleClass('active');
+  // }
 
-  this.hoverIn = function(elementId) {
-  	angular.element('#' + elementId).toggleClass('md-whiteframe-z0');
-  	angular.element('#' + elementId).toggleClass('md-whiteframe-z1');
-  }
+  this.toggleClass = function(elementId, className){
+    angular.element('#' + elementId).toggleClass(className);
+  };
 
-  this.hoverOut = function(elementId) {
-  	angular.element('#' + elementId).toggleClass('md-whiteframe-z0');
-  	angular.element('#' + elementId).toggleClass('md-whiteframe-z1');
-  }
+  this.scrollTo = function(id) {
+      $location.hash(id);
+      $anchorScroll();
+   }
+
+  // this.hoverIn = function(elementId) {
+  // 	angular.element('#' + elementId).toggleClass('md-whiteframe-z0');
+  // 	angular.element('#' + elementId).toggleClass('md-whiteframe-z1');
+  // }
+
+  // this.hoverOut = function(elementId) {
+  // 	angular.element('#' + elementId).toggleClass('md-whiteframe-z0');
+  // 	angular.element('#' + elementId).toggleClass('md-whiteframe-z1');
+  // }
 
 
 });

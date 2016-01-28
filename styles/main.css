@@ -9,6 +9,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: Bangers, Impact, "Arial Black", sans-serif; }
 
+md-content {
+  min-height: 100%; }
+
 md-content#profile,
 md-content#experience,
 md-content#contact {
@@ -60,8 +63,10 @@ div#mainContent {
   top: 10em;
   left: 2em;
   z-index: 10; }
+  #sideNav.active md-whiteframe:hover {
+    box-shadow: 1px 1px 10px black, -1px -1px 4px black; }
   #sideNav.active a:hover {
-    text-shadow: 2px 2px 1px black; }
+    text-shadow: 2px 2px 1px #9E9E9E; }
 
 /* Profile Card Styling*/
 div#profileCard {
@@ -88,13 +93,13 @@ div#profileCard {
     transition-delay: .5s;
     color: transparent; }
 
-div#profileCard:hover img {
+div#profileCard.active img {
   border: 5px solid black;
   border-radius: 10px; }
 
-div#profileCard:hover p {
+div#profileCard.active p {
   position: relative;
   right: 0px; }
 
-div#profileCard:hover div#aboutMe {
+div#profileCard.active div#aboutMe {
   color: inherit; }
