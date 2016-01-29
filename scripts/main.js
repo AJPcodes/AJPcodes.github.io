@@ -30,6 +30,13 @@ app.config(['$routeProvider', function($routeProvider){
 
 }]);
 
+//patch to make angular play nice with Jekyll
+app.config([
+  '$interpolateProvider', function($interpolateProvider) {
+    return $interpolateProvider.startSymbol('{(').endSymbol(')}');
+  }
+]);
+
 app.directive('scrollToItem', function($anchorScroll) {
     return {
         restrict: 'A',
