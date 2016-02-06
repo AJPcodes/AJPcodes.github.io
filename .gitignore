@@ -40,3 +40,4 @@ scss
 #jekyllStuff
 .jekyll-metadata
 _site
+.sass-cache
