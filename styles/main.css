@@ -1,13 +1,13 @@
 /*Color Pallets:
 https://www.google.com/design/spec/style/color.html#color-color-palette
 */
-@import url(https://fonts.googleapis.com/css?family=Bangers|Chau+Philomene+One:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Russo+One|Chau+Philomene+One:400,400italic);
 /*Main Styles*/
 body {
   font-family: "Chau Philomene One", Tahoma, sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Bangers, Impact, "Arial Black", sans-serif; }
+  font-family: "Russo One", Impact, "Arial Black", sans-serif; }
 
 *:focus {
   outline: none; }
@@ -59,7 +59,8 @@ div#mainContent {
   z-index: 10; }
   #sideNav md-whiteframe {
     width: 100%; }
-  #sideNav div button {
+  #sideNav div button,
+  #sideNav div a {
     height: 2em;
     color: #B2EBF2;
     text-shadow: 1px 1px 0px #424242; }
@@ -73,7 +74,7 @@ div#mainContent {
     box-shadow: -2px -2px 10px black;
     transform: scale(1.1); }
   #sideNav.active a:hover {
-    text-shadow: 2px 2px 1px #9E9E9E; }
+    text-shadow: 2px 2px 4px #9E9E9E; }
 
 /* Profile Card Styling*/
 div#profileCard {
@@ -116,3 +117,17 @@ div#profileCard.active p {
 
 div#profileCard.active div#aboutMe {
   color: inherit; }
+
+/*Blog Main Styles*/
+#blogMain ul.post-list {
+  padding: 1.5em; }
+
+#blogMain li {
+  list-style-type: none; }
+
+#blogMain a, #blogMain a:active, #blogMain a:visited {
+  color: #424242;
+  text-decoration: none; }
+
+#blogMain a:hover {
+  text-shadow: 1px 1px 2px #B2EBF2; }
