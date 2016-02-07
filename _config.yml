@@ -19,5 +19,5 @@ permalink: /:year/:month/:day/:title
 # Build settings
 markdown: kramdown
 
-exclude: [lib]
-keep_files: [lib]
+#exclude: [lib]
+#keep_files: [lib]
