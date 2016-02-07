@@ -36,3 +36,8 @@ lib/node_modules
 
 #scss source
 scss
+
+#jekyllStuff
+.jekyll-metadata
+_site
+.sass-cache

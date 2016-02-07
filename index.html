@@ -1,60 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>AJP Codes</title>
-	<link href="lib/bower_components/angular-material/angular-material.css" rel="stylesheet" />
-	<link rel="stylesheet" href="styles/main.css">
-</head>
-<body ng-app="AJPCodes" ng-controller="MainCtrl as mainCtrl">
+---
+layout: default
+---
 
-    <md-toolbar layout="row" layout-align="center" class="md-whiteframe-z2">
-      <h1>AJP Codes</h1>
-
-			<md-button class="md-accent" ng-click="mainCtrl.toggleClass('sideNav', 'active')">
-      	Explore
-    	</md-button>
-
-    </md-toolbar>
-<!--
-    <md-sidenav flex="25" md-component-id="left" class="md-sidenav-left md-whiteframe-z4 md-accent" layout-align="center" class="md-accent"> -->
-
-			<div id="sideNav" ng-include src="'templates/sideNav.html'"></div>
-
-<!-- 	  </md-sidenav> -->
-
-		<div id="mainContent">
-
-			<div id="profile" ng-include src="'templates/profile.html'"></div>
-			<div id="skills" ng-include src="'templates/skills.html'"></div>
-			<div id="experience" ng-include src="'templates/experience.html'"></div>
-			<div id="projects" ng-include src="'templates/projects.html'"></div>
-			<div id="contact" ng-include src="'templates/contact.html'"></div>
-
-		</div>
-
-  <!-- jQuery -->
-	<script src="lib/bower_components/jQuery/dist/jquery.min.js"></script>
-	<!-- Angular -->
-	<script src="lib/bower_components/angular/angular.min.js"></script>
-	<!-- Angular Route -->
-	<script src="lib/bower_components/angular-route/angular-route.min.js"></script>
-	<!-- Angular Material -->
-  <script src="lib/bower_components/angular-animate/angular-animate.js" type="text/javascript" ></script>
-  <script src="lib/bower_components/angular-aria/angular-aria.js" type="text/javascript" ></script>
-	<script src="lib/bower_components/angular-material/angular-material.min.js"></script>
-
-
-
-	<script src="scripts/main.js"></script>
-	<!-- factories! -->
-<!-- <script src="app/.js"></script> -->
-	<!-- controllers! -->
-	<script src="scripts/mainCtrl.js"></script>
-
-
-
-</body>
-</html>
+<div id="profile"> {% include profile.html %}</div>
+<div id="skills"> {% include skills.html  %}</div>
+<div id="experience"> {% include experience.html %}</div>
+<div id="projects"> {% include projects.html %}</div>
+<div id="contact"> {% include contact.html %}</div>
