@@ -37,19 +37,24 @@ app.config([
   }
 ]);
 
-app.directive('scrollToItem', function($anchorScroll) {
+app.directive('scrollToItem', function($anchorScroll, $location) {
     return {
         restrict: 'A',
         scope: {
             scrollTo: "@"
         },
         link: function(scope, $elm,attr) {
-
             $elm.on('click', function() {
+            console.log(window.location.pathname);
             	//scroll to sections with 100px offset for the toolbar
-                $('html,body').animate({scrollTop: ($(scope.scrollTo).offset().top - 100) }, "slow");
+                if (window.location.pathname === "/") {
+                    $('html,body').animate({scrollTop: ($(scope.scrollTo).offset().top - 100) }, "slow");
+                } else {
+                    // window.location.pathname = "/" + scope.scrollTo;
+                    // $location.hash(scope.scrollTo);
+                }
 
             });
 
         }
-    }})
+    }});

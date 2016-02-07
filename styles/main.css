@@ -59,7 +59,8 @@ div#mainContent {
   z-index: 10; }
   #sideNav md-whiteframe {
     width: 100%; }
-  #sideNav div button {
+  #sideNav div button,
+  #sideNav div a {
     height: 2em;
     color: #B2EBF2;
     text-shadow: 1px 1px 0px #424242; }

@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Using Jekyll _config's Exclude and Keep_File"
+date:   2016-02-07 13:00:00 -0600
+blurb: A quick note about Exclude and Keep File to make quicker builds.
+---
+<p>I've just started using Jekyll and was having a "how is this viable?!" moment because the rebuild for Jekyll serve was taking over 30 seconds on file changes.</p>
+<p>After a bit of poking around online I realized that my Jekyll build was redoing the entire contents of my bower_components file every time it rebuilt the site.</p>
+<p>So, I added  <pre>
+exclude: [lib]
+keep_files: [lib]
+</pre> to my _config.yml file. This tells Jekyll to keep the lib folder as-is, and I can uncomment and build it out properly if I add any plugins. Currently I've got Angular JS and Angular Material for the blog. Tests before and after resulted in a 39.238 second build time completing in 0.269 seconds. #success </p>
+

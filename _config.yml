@@ -14,7 +14,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://AJPCodes.github.io" # the base hostname & protocol for your site
 twitter_username: AJP87
 github_username:  AJPCodes
-permalink: /:title
+permalink: /:year/:month/:day/:title
 
 # Build settings
 markdown: kramdown
+
+exclude: [lib]
+keep_files: [lib]

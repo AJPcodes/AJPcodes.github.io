@@ -1,12 +1,12 @@
 ---
 layout: default
 ---
-<article class="post">
+<md-content flex id="post" class="md-whiteframe-z0" layout="row" layout-xs="column" layout-align="center center">
 
+  <div flex-offset="20" flex>
+  <div flex id="post-content" class="md-whiteframe-z2" layout="column" layout-align="center center">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-
-  <div class="post-content" itemprop="articleBody">
     {{ content }}
-  </div>
 
-</article>
+  </div>
+</md-content>

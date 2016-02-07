@@ -1,8 +1,13 @@
 ---
 layout: default
 ---
-  <h1 class="post-title" itemprop="name headline">AJP Codes Blog!</h1>
+<div id="sideNav">{% include sideNavBlog.html %}</div>
 
+<md-content flex id="blogMain" class="md-whiteframe-z0" layout="column" layout-gt-sm="row" layout-align="center center">
+
+  <div flex-offset="20" flex>
+    <h1 class="post-title" itemprop="name headline">Blog</h1>
+  </div>
   <ul class="post-list">
     {% for post in site.posts %}
 
@@ -11,6 +16,7 @@ layout: default
       <h2>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>
+      <p>{{post.blurb}}</p>
 
     </li>
     {% endfor %}
@@ -18,4 +24,5 @@ layout: default
 
   </ul>
 
-</article>
+</md-content>
+
