@@ -12,6 +12,16 @@ h1, h2, h3, h4, h5, h6 {
 *:focus {
   outline: none; }
 
+li {
+  list-style-type: none; }
+
+a, a:active, a:visited {
+  color: #424242;
+  text-decoration: none; }
+
+a:hover {
+  text-shadow: 1px 1px 2px #B2EBF2; }
+
 md-content {
   min-height: 100%; }
 
@@ -118,7 +128,20 @@ div#profileCard.active p {
 div#profileCard.active div#aboutMe {
   color: inherit; }
 
-/*Blog Main Styles*/
+/*
+SKILLS STYLES
+*/
+#skills li {
+  line-height: 2em;
+  display: inline-block;
+  width: 45%; }
+  #skills li img {
+    max-height: 2em;
+    max-width: 2em; }
+
+/*
+BLOG STYLES (Main Page)
+*/
 #blogMain ul.post-list {
   padding: 1.5em; }
 

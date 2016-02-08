@@ -19,5 +19,6 @@ permalink: /:year/:month/:day/:title
 # Build settings
 markdown: kramdown
 
+#for use in development - allows quick builds
 exclude: [lib]
 keep_files: [lib]

@@ -41,3 +41,4 @@ scss
 .jekyll-metadata
 _site
 .sass-cache
+_config.yml
