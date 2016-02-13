@@ -1,25 +1,39 @@
 <md-subheader>Profile</md-subheader>
 
-<md-content flex id="profile" class="md-whiteframe-z0" layout="column" layout-gt-sm="row" layout-align="center center">
+<md-content flex id="profile" class="md-whiteframe-z0" layout="column" layout-gt-sm="row" layout-align="center top">
 
-	<div flex-offset="20" flex>
+	<div flex-offset="20" flex=20 id="welcome">
 		<h1>Welcome</h1>
-		<p>This page is currently under construction.</p>
-		<p>Pardon the messy UI and broken links!</p>
-		<p>Check back soon!</p>
+		<p>My name is Allen Phelps, and I'm a software developer in Nashville, TN.</p>
+		<p>This is my portfolio page, so stay here and take a look around to see some of my skills and projects.
+		 I also occasionally <a class="hoverButton" href="/blog">blog</a> if you want to check that out.
+		 </p>
 	</div>
 
-	<div flex id="profileCard" class="md-whiteframe-z2" layout="column" layout-align="center center">
+	<div flex=60 id="profileCard" class="md-whiteframe-z2" layout="column" layout-align="center center">
+
 
 		<img src="./styles/images/profilePic.jpg" alt="Profile Picture" ng-click="mainCtrl.toggleClass('profileCard', 'active')">
 
-		<p id="item1">Allen Phelps</p>
-		<p id="item2">Full Stack Developer</p>
-		<p id="item3">Nashville, TN</p>
+		<h3>About Me</h3>
+
+		<p id="item1">Curious</p>
+		<p id="item2">Resilient</p>
+		<p id="item3">Dedicated</p>
 
 		<div id="aboutMe">
-			<h3>About Me</h3>
-			<p>I'm a 28 year old, newly minted software developer, finishing the Node.js full-stack development track at Nashville Software School. I'm happy to be joining the growing tech scene in Nashville. Please take a look around and see what I can do.</p>
+			<p>
+			I'm a newly minted software developer, finishing the Node.js MEAN-stack development track at Nashville Software School (NSS). As a naturally curious person who loves to learn and thrives in challenging environments, I can't wait to see what's next.
+			</p>
+			<p>
+			After obtaining my undergraduate degree in economics from <a href="http://www.maryvillecollege.edu/about/mission-vision/purpose-statement/">Maryville College</a>, I decided to see the world and spent four years living in Japan, while teaching English, learning Japanese, and travelling around Japan and eastern Asia. I loved my time there, especially the constant stimulation from learning new language and culture.
+			</p>
+			<p>
+			I've been back in the US for a little over two years now, living in Nashville and working in air cargo logistics for Nippon Express. I started part time classes at NSS in July of 2015, and learning to code has felt like discovering what I'm meant to do. The mental stimulation, the parallels to linguistics, the mix of artistic creativity and mathematical precision -- I love all of it.
+			</p>
+			<p>
+			The further along I get the more I realize that the tech world is as deep as it is broad. I'm dedicated to continually improving. I can't wait to dive deeper.
+			</p>
 		</div>
 
 	</div>

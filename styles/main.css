@@ -87,8 +87,14 @@ div#mainContent {
     text-shadow: 2px 2px 4px #9E9E9E; }
 
 /* Profile Card Styling*/
+div#welcome {
+  margin-top: 4em; }
+  div#welcome h1 {
+    padding: 0.5em; }
+  div#welcome p {
+    padding: 1em; }
+
 div#profileCard {
-  height: 40em;
   overflow: hidden; }
   div#profileCard img {
     margin-top: 2em;
@@ -110,10 +116,13 @@ div#profileCard {
   div#profileCard p#item3 {
     transition: all ease 1s; }
   div#profileCard div#aboutMe {
+    font-size: 0.25em;
     text-align: center;
     transition: all ease .5s;
     transition-delay: .5s;
     color: transparent; }
+    div#profileCard div#aboutMe a {
+      color: transparent; }
 
 div#profileCard.active img {
   height: 10em;
@@ -126,18 +135,25 @@ div#profileCard.active p {
   right: 0px; }
 
 div#profileCard.active div#aboutMe {
-  color: inherit; }
+  color: inherit;
+  font-size: inherit; }
+  div#profileCard.active div#aboutMe a {
+    color: inherit; }
 
 /*
 SKILLS STYLES
 */
 #skills li {
   line-height: 2em;
-  display: inline-block;
-  width: 45%; }
+  display: inline-block; }
   #skills li img {
-    max-height: 2em;
-    max-width: 2em; }
+    max-height: 100%;
+    max-width: 2em;
+    vertical-align: middle; }
+  #skills li p {
+    display: inline-block;
+    line-height: 2em;
+    margin: .5em; }
 
 /*
 BLOG STYLES (Main Page)
