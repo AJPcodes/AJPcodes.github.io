@@ -156,6 +156,12 @@ SKILLS STYLES
     margin: .5em; }
 
 /*
+PROJECTS STYLES
+*/
+#projects img {
+  max-width: 100%; }
+
+/*
 BLOG STYLES (Main Page)
 */
 #blogMain ul.post-list {
