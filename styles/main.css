@@ -145,7 +145,8 @@ SKILLS STYLES
 */
 #skills li {
   line-height: 2em;
-  display: inline-block; }
+  display: inline-block;
+  white-space: nowrap; }
   #skills li img {
     max-height: 100%;
     max-width: 2em;
