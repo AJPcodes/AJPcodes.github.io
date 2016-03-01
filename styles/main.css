@@ -48,10 +48,12 @@ md-toolbar {
   position: fixed;
   top: 0px;
   height: 5em; }
-  md-toolbar span {
+  md-toolbar button i#hamburger {
+    margin-left: 3em;
+    font-size: 2.5em;
     text-shadow: 1px 1px 0px black;
     color: #B2EBF2; }
-  md-toolbar span:hover {
+  md-toolbar button i#hamburger:hover {
     text-shadow: 2px 2px 1px black; }
 
 div#mainContent {
@@ -62,7 +64,7 @@ div#mainContent {
   transition: all ease 0.75s;
   background-color: #9E9E9E;
   height: 50%;
-  width: 10em;
+  width: 15em;
   position: fixed;
   top: -15em;
   left: -20em;
@@ -87,57 +89,66 @@ div#mainContent {
     text-shadow: 2px 2px 4px #9E9E9E; }
 
 /* Profile Card Styling*/
-div#welcome {
+div#profileText {
+  text-align: right;
   margin-top: 4em; }
-  div#welcome h1 {
+  div#profileText h3 {
     padding: 0.5em; }
-  div#welcome p {
-    padding: 1em; }
+  div#profileText p {
+    padding: 0.5em; }
 
-div#profileCard {
-  overflow: hidden; }
-  div#profileCard img {
-    margin-top: 2em;
+#profileCard {
+  text-align: center;
+  padding: 0.5em;
+  overflow: hidden;
+  background-image: url("/styles/images/circuitsBackground.jpg");
+  background-size: cover; }
+  #profileCard img {
+    margin: 2em auto;
     transition: all ease 0.25s;
-    border: 5px solid black;
+    border: 3px solid black;
     border-radius: 50%;
-    height: 15em;
-    width: 15em; }
-  div#profileCard img:hover {
-    height: 15.5em;
-    width: 15.5em; }
-  div#profileCard > p {
+    height: 10em;
+    width: 10em;
+    max-width: 100%; }
+  #profileCard > p {
     position: relative;
-    right: -1000px; }
-  div#profileCard p#item1 {
+    right: -2000px;
+    padding: 0.5em;
+    margin: 0.25em; }
+  #profileCard p#item1 {
     transition: all ease 0.5s; }
-  div#profileCard p#item2 {
+  #profileCard p#item2 {
     transition: all ease 0.75s; }
-  div#profileCard p#item3 {
+  #profileCard p#item3 {
     transition: all ease 1s; }
-  div#profileCard div#aboutMe {
+  #profileCard div#aboutMe {
     font-size: 0.25em;
     text-align: center;
     transition: all ease .5s;
     transition-delay: .5s;
     color: transparent; }
-    div#profileCard div#aboutMe a {
+    #profileCard div#aboutMe a {
       color: transparent; }
 
-div#profileCard.active img {
-  height: 10em;
-  width: 10em;
+#profileCard.active img,
+#profileCard:hover img {
+  height: 11em;
+  width: 11em;
   border: 5px solid black;
   border-radius: 10px; }
 
-div#profileCard.active p {
+#profileCard.active p,
+#profileCard:hover p {
   position: relative;
   right: 0px; }
 
-div#profileCard.active div#aboutMe {
+#profileCard.active div#aboutMe,
+#profileCard:hover div#aboutMe {
   color: inherit;
   font-size: inherit; }
-  div#profileCard.active div#aboutMe a {
+  #profileCard.active div#aboutMe a,
+  #profileCard:hover div#aboutMe a {
     color: inherit; }
 
 /*
