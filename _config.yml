@@ -20,5 +20,5 @@ permalink: /:year/:month/:day/:title
 markdown: kramdown
 
 #for use in development - allows quick builds
-#exclude: [lib]
-#keep_files: [lib]
+exclude: [lib]
+keep_files: [lib]

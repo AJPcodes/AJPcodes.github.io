@@ -25,6 +25,9 @@ a:hover {
 md-content {
   min-height: 100%; }
 
+md-content#splash {
+  background-color: transparent; }
+
 md-content#profile,
 md-content#experience,
 md-content#contact {
@@ -35,12 +38,10 @@ md-content#contact {
     background-color: #00BCD4; }
 
 md-content#skills,
-md-content#projects
-md-content#contact {
-  background-color: #F5F5F5; }
+md-content#projects {
+  background-color: rgba(255, 255, 255, 0.75); }
   md-content#skills .md-subheader-content,
-  md-content#projects
-md-content#contact .md-subheader-content {
+  md-content#projects .md-subheader-content {
     background-color: #9E9E9E; }
 
 /* Top Toolbar Styling*/
@@ -57,7 +58,9 @@ md-toolbar {
     text-shadow: 2px 2px 1px black; }
 
 div#mainContent {
-  margin-top: 6em; }
+  margin-top: 6em;
+  background-image: url("/styles/images/fractal.png");
+  background-repeat: repeat; }
 
 /* SideNav Styling*/
 #sideNav {
