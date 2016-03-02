@@ -56,17 +56,20 @@ md-content#projects {
 md-toolbar {
   position: fixed;
   top: 0px;
-  height: 5em; }
-  md-toolbar button i#hamburger {
-    margin-left: 3em;
-    font-size: 2.5em;
-    text-shadow: 1px 1px 0px black;
-    color: #B2EBF2; }
-  md-toolbar button i#hamburger:hover {
-    text-shadow: 2px 2px 1px black; }
+  height: 3em;
+  text-align: left; }
+  md-toolbar button {
+    text-align: left; }
+    md-toolbar button i#hamburger {
+      margin-left: 3em;
+      font-size: 2.5em;
+      text-shadow: 1px 1px 0px black;
+      color: #B2EBF2; }
+    md-toolbar button i#hamburger:hover {
+      text-shadow: 2px 2px 1px black; }
 
 div#mainContent {
-  margin-top: 6em;
+  margin-top: 3em;
   background-image: url("/styles/images/nebula.jpg");
   background-repeat: repeat; }
 
