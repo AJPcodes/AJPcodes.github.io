@@ -22,6 +22,14 @@ a, a:active, a:visited {
 a:hover {
   text-shadow: 1px 1px 2px #B2EBF2; }
 
+div.md-subheader {
+  background-color: transparent;
+  color: #B2EBF2;
+  text-shadow: 1px 1px 1px black, 2px 2px 2px white;
+  font-size: 2em; }
+  div.md-subheader span > span {
+    padding: 5px; }
+
 md-content {
   min-height: 100%; }
 
@@ -39,7 +47,7 @@ md-content#contact {
 
 md-content#skills,
 md-content#projects {
-  background-color: rgba(255, 255, 255, 0.75); }
+  background-color: #F5F5F5; }
   md-content#skills .md-subheader-content,
   md-content#projects .md-subheader-content {
     background-color: #9E9E9E; }
@@ -59,7 +67,7 @@ md-toolbar {
 
 div#mainContent {
   margin-top: 6em;
-  background-image: url("/styles/images/fractal.png");
+  background-image: url("/styles/images/nebula.jpg");
   background-repeat: repeat; }
 
 /* SideNav Styling*/
@@ -90,6 +98,22 @@ div#mainContent {
     transform: scale(1.1); }
   #sideNav.active a:hover {
     text-shadow: 2px 2px 4px #9E9E9E; }
+
+/*Splash section styling*/
+div#splash #splashDiv {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 2em; }
+
+div#splash h1, div#splash h2 {
+  text-align: center;
+  color: #B2EBF2;
+  text-shadow: 2px 2px 2px black, 3px 3px 3px #B2EBF2, 5px 5px 5px #424242; }
+
+div#splash h1 {
+  font-size: 3em; }
+
+div#splash h2 {
+  font-size: 2.5em; }
 
 /* Profile Card Styling*/
 div#profileText {
@@ -173,6 +197,9 @@ SKILLS STYLES
 /*
 PROJECTS STYLES
 */
+#projects #tabs {
+  margin-bottom: 2em auto; }
+
 #projects img {
   max-width: 100%; }
 
