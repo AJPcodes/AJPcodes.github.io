@@ -23,12 +23,21 @@ a:hover {
   text-shadow: 1px 1px 2px #B2EBF2; }
 
 div.md-subheader {
-  background-color: transparent;
-  color: #B2EBF2;
-  text-shadow: 1px 1px 1px black, 2px 2px 2px white;
-  font-size: 2em; }
-  div.md-subheader span > span {
-    padding: 5px; }
+  background-color: transparent; }
+  div.md-subheader .md-subheader-inner {
+    padding: 5px 0px; }
+  div.md-subheader .parallax-container {
+    height: 90px; }
+  div.md-subheader .parallax h3 {
+    color: #F5F5F5;
+    text-shadow: 1px 1px 1px black, 2px 2px 2px white;
+    font-size: 2em;
+    position: relative;
+    z-index: 10;
+    line-height: 2em;
+    padding-left: 2em;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: .7em 0; }
 
 md-content {
   min-height: 100%; }
@@ -47,7 +56,7 @@ md-content#contact {
 
 md-content#skills,
 md-content#projects {
-  background-color: #F5F5F5; }
+  background-color: #9E9E9E; }
   md-content#skills .md-subheader-content,
   md-content#projects .md-subheader-content {
     background-color: #9E9E9E; }
@@ -103,20 +112,21 @@ div#mainContent {
     text-shadow: 2px 2px 4px #9E9E9E; }
 
 /*Splash section styling*/
-div#splash #splashDiv {
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 2em; }
-
-div#splash h1, div#splash h2 {
-  text-align: center;
-  color: #B2EBF2;
-  text-shadow: 2px 2px 2px black, 3px 3px 3px #B2EBF2, 5px 5px 5px #424242; }
-
-div#splash h1 {
-  font-size: 3em; }
-
-div#splash h2 {
-  font-size: 2.5em; }
+div#splash {
+  /*Parallax Styles*/ }
+  div#splash .parallax {
+    z-index: 0; }
+  div#splash #splashDiv {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 2em; }
+  div#splash h1, div#splash h2 {
+    text-align: center;
+    color: #B2EBF2;
+    text-shadow: 2px 2px 2px black, 3px 3px 3px #B2EBF2, 5px 5px 5px #424242; }
+  div#splash h1 {
+    font-size: 3em; }
+  div#splash h2 {
+    font-size: 2.5em; }
 
 /* Profile Card Styling*/
 div#profileText {
@@ -125,7 +135,8 @@ div#profileText {
   div#profileText h3 {
     padding: 0.5em; }
   div#profileText p {
-    padding: 0.5em; }
+    padding: 0.5em;
+    font-size: 1.5em; }
 
 #profileCard {
   text-align: center;
@@ -145,7 +156,8 @@ div#profileText {
     position: relative;
     right: -2000px;
     padding: 0.5em;
-    margin: 0.25em; }
+    margin: 0.25em;
+    font-size: 2em; }
   #profileCard p#item1 {
     transition: all ease 0.5s; }
   #profileCard p#item2 {

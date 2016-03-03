@@ -19,6 +19,7 @@
     "angular": "~1.4.9",
     "angular-route": "~1.4.9",
     "jQuery": "~2.2.0",
-    "angular-material": "~1.0.3"
+    "angular-material": "~1.0.3",
+    "Materialize": "materialize#^0.97.5"
   }
 }
