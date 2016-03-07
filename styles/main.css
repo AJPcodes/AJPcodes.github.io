@@ -16,7 +16,7 @@ li {
   list-style-type: none; }
 
 a, a:active, a:visited {
-  color: #424242;
+  color: #212121;
   text-decoration: none; }
 
 a:hover {
@@ -29,7 +29,7 @@ div.md-subheader {
   div.md-subheader .parallax-container {
     height: 90px; }
   div.md-subheader .parallax h3 {
-    color: #F5F5F5;
+    color: #616161;
     text-shadow: 1px 1px 1px black, 2px 2px 2px white;
     font-size: 2em;
     position: relative;
@@ -55,10 +55,12 @@ md-content#contact {
 
 md-content#skills,
 md-content#projects {
-  background-color: #9E9E9E; }
+  background-color: #424242;
+  color: #B2EBF2;
+  text-shadow: 1px 1px 1px #212121; }
   md-content#skills .md-subheader-content,
   md-content#projects .md-subheader-content {
-    background-color: #9E9E9E; }
+    background-color: #424242; }
 
 /* Top Toolbar Styling*/
 button#navToggle {
@@ -84,7 +86,7 @@ div#mainContent {
 /* SideNav Styling*/
 #sideNav {
   transition: all ease 0.75s;
-  background-color: #9E9E9E;
+  background-color: #424242;
   height: 50%;
   width: 15em;
   position: fixed;
@@ -97,7 +99,7 @@ div#mainContent {
   #sideNav div a {
     height: 2em;
     color: #B2EBF2;
-    text-shadow: 1px 1px 0px #424242; }
+    text-shadow: 1px 1px 1px #212121; }
 
 #sideNav.active {
   position: fixed;
@@ -108,7 +110,7 @@ div#mainContent {
     box-shadow: -2px -2px 10px black;
     transform: scale(1.1); }
   #sideNav.active a:hover {
-    text-shadow: 2px 2px 4px #9E9E9E; }
+    text-shadow: 2px 2px 4px #424242; }
 
 /*Splash section styling*/
 div#splash {
@@ -120,7 +122,7 @@ div#splash {
   div#splash h1, div#splash h2 {
     text-align: center;
     color: #B2EBF2;
-    text-shadow: 2px 2px 2px black, 3px 3px 3px #B2EBF2, 5px 5px 5px #424242; }
+    text-shadow: 2px 2px 2px black, 3px 3px 3px #B2EBF2, 5px 5px 5px #212121; }
   div#splash h1 {
     font-size: 3em; }
   div#splash h2 {
@@ -140,8 +142,9 @@ div#profileText {
   text-align: center;
   padding: 0.5em;
   overflow: hidden;
-  background-color: #9E9E9E;
-  text-shadow: 1px 1px 1px white; }
+  background-color: #424242;
+  color: #B2EBF2;
+  text-shadow: 1px 1px 1px #212121; }
   #profileCard img {
     margin: 2em auto;
     transition: all ease 0.25s;
@@ -226,7 +229,7 @@ BLOG STYLES (Main Page)
   list-style-type: none; }
 
 #blogMain a, #blogMain a:active, #blogMain a:visited {
-  color: #424242;
+  color: #212121;
   text-decoration: none; }
 
 #blogMain a:hover {
