@@ -87,7 +87,6 @@ div#mainContent {
 #sideNav {
   transition: all ease 0.75s;
   background-color: #424242;
-  max-height: 75%;
   width: 12em;
   position: fixed;
   top: -10em;
