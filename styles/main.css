@@ -87,23 +87,26 @@ div#mainContent {
 #sideNav {
   transition: all ease 0.75s;
   background-color: #424242;
-  height: 50%;
-  width: 15em;
+  max-height: 75%;
+  width: 12em;
   position: fixed;
-  top: -15em;
+  top: -10em;
   left: -20em;
   z-index: 10; }
   #sideNav md-whiteframe {
-    width: 100%; }
+    width: 100%;
+    padding: 0; }
   #sideNav div button,
   #sideNav div a {
     height: 2em;
+    margin: 0;
+    padding: 0;
     color: #B2EBF2;
     text-shadow: 1px 1px 1px #212121; }
 
 #sideNav.active {
   position: fixed;
-  top: 10em;
+  top: 8em;
   left: -2em;
   z-index: 10; }
   #sideNav.active md-whiteframe:hover {
@@ -229,9 +232,11 @@ BLOG STYLES (Main Page)
 #blogMain,
 #post {
   background-image: url("/styles/images/zenSand.jpg"); }
-  #blogMain h1,
-  #post h1 {
-    text-align: center; }
+  #blogMain h1, #blogMain h2,
+  #post h1,
+  #post h2 {
+    text-align: center;
+    font-size: 2em; }
   #blogMain ul.post-list,
   #blogMain #post-content,
   #post ul.post-list,
