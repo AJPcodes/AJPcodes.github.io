@@ -222,15 +222,31 @@ PROJECTS STYLES
 /*
 BLOG STYLES (Main Page)
 */
-#blogMain ul.post-list {
-  padding: 1.5em; }
-
-#blogMain li {
-  list-style-type: none; }
-
-#blogMain a, #blogMain a:active, #blogMain a:visited {
-  color: #212121;
-  text-decoration: none; }
-
-#blogMain a:hover {
-  text-shadow: 1px 1px 2px #B2EBF2; }
+#blogMain,
+#post {
+  background-image: url("/styles/images/zenSand.jpg"); }
+  #blogMain h1,
+  #post h1 {
+    text-align: center; }
+  #blogMain ul.post-list,
+  #blogMain #post-content,
+  #post ul.post-list,
+  #post #post-content {
+    margin-right: 5em;
+    padding: 1.5em;
+    background-color: rgba(255, 255, 255, 0.75); }
+  #blogMain li,
+  #post li {
+    list-style-type: none; }
+    #blogMain li h2,
+    #post li h2 {
+      font-size: 2em; }
+  #blogMain a, #blogMain a:active, #blogMain a:visited,
+  #post a,
+  #post a:active,
+  #post a:visited {
+    color: #212121;
+    text-decoration: none; }
+  #blogMain a:hover,
+  #post a:hover {
+    text-shadow: 1px 1px 2px #B2EBF2; }
