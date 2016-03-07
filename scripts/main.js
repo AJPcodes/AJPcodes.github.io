@@ -48,7 +48,7 @@ app.directive('scrollToItem', function($anchorScroll, $location) {
             console.log(window.location.pathname);
             	//scroll to sections with 100px offset for the toolbar
                 if (window.location.pathname === "/") {
-                    $('html,body').animate({scrollTop: ($(scope.scrollTo).offset().top - 100) }, "slow");
+                    $('html,body').animate({scrollTop: ($(scope.scrollTo).offset().top) }, "slow");
                 } else {
                     // window.location.pathname = "/" + scope.scrollTo;
                     // $location.hash(scope.scrollTo);

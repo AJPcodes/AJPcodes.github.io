@@ -23,7 +23,7 @@ a:hover {
   text-shadow: 1px 1px 2px #B2EBF2; }
 
 div.md-subheader {
-  background-color: transparent; }
+  background-color: #fff; }
   div.md-subheader .md-subheader-inner {
     padding: 5px 0px; }
   div.md-subheader .parallax-container {
@@ -36,7 +36,6 @@ div.md-subheader {
     z-index: 10;
     line-height: 2em;
     padding-left: 2em;
-    background-color: rgba(0, 0, 0, 0.5);
     margin: .7em 0; }
 
 md-content {
@@ -62,24 +61,24 @@ md-content#projects {
     background-color: #9E9E9E; }
 
 /* Top Toolbar Styling*/
-md-toolbar {
+button#navToggle {
+  z-index: 2;
   position: fixed;
-  top: 0px;
+  text-align: center;
+  background-color: transparent;
+  width: 1em;
   height: 3em;
-  text-align: left; }
-  md-toolbar button {
-    text-align: left; }
-    md-toolbar button i#hamburger {
-      margin-left: 3em;
-      font-size: 2.5em;
-      text-shadow: 1px 1px 0px black;
-      color: #B2EBF2; }
-    md-toolbar button i#hamburger:hover {
-      text-shadow: 2px 2px 1px black; }
+  padding: 0.5em; }
+  button#navToggle i#hamburger {
+    font-size: 1.5em;
+    line-height: 1.25em;
+    text-shadow: 1px 1px 0px black;
+    color: #B2EBF2; }
+  button#navToggle i#hamburger:hover {
+    text-shadow: 2px 2px 1px black; }
 
 div#mainContent {
-  margin-top: 3em;
-  background-image: url("/styles/images/nebula.jpg");
+  background-image: url("/styles/images/zenSand.jpg");
   background-repeat: repeat; }
 
 /* SideNav Styling*/
@@ -117,7 +116,6 @@ div#splash {
   div#splash .parallax {
     z-index: 0; }
   div#splash #splashDiv {
-    background-color: rgba(0, 0, 0, 0.2);
     padding: 2em; }
   div#splash h1, div#splash h2 {
     text-align: center;
