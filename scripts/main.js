@@ -4,7 +4,7 @@ var app = angular.module('AJPCodes', ['ngRoute', 'ngMaterial']);
 app.config(function($mdThemingProvider) {
   $mdThemingProvider.theme('default')
     .primaryPalette('grey')
-    .accentPalette('cyan');
+    .accentPalette('light-blue');
 });
 
 //Setting Up routes

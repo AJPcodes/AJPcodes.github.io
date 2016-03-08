@@ -19,12 +19,12 @@ li {
   list-style-type: none; }
 
 a, a:active, a:visited {
-  color: #00BCD4;
+  color: #4FC3F7;
   text-shadow: 1px 1px 1px #212121;
   text-decoration: none; }
 
 a:hover {
-  color: #424242;
+  color: #616161;
   text-shadow: 1px 1px 1px #212121; }
 
 div.md-subheader {
@@ -34,7 +34,7 @@ div.md-subheader {
   div.md-subheader .parallax-container {
     height: 100px; }
   div.md-subheader .parallax h3 {
-    color: #B2EBF2;
+    color: #B3E5FC;
     text-shadow: 1px 1px 1px black, 2px 2px 2px #424242;
     font-size: 2em;
     position: relative;
@@ -52,16 +52,16 @@ md-content#splash {
 md-content#profile,
 md-content#experience,
 md-content#contact {
-  background-color: #B2EBF2; }
+  background-color: #B3E5FC; }
   md-content#profile .md-subheader-content,
   md-content#experience .md-subheader-content,
   md-content#contact .md-subheader-content {
-    background-color: #00BCD4; }
+    background-color: #4FC3F7; }
 
 md-content#skills,
 md-content#projects {
   background-color: #424242;
-  color: #B2EBF2; }
+  color: #B3E5FC; }
   md-content#skills .md-subheader-content,
   md-content#projects .md-subheader-content {
     background-color: #424242; }
@@ -79,7 +79,7 @@ button#navToggle {
     font-size: 1.5em;
     line-height: 1.25em;
     text-shadow: 1px 1px 0px black;
-    color: #B2EBF2; }
+    color: #B3E5FC; }
   button#navToggle i#hamburger:hover {
     text-shadow: 2px 2px 1px black; }
 
@@ -104,7 +104,7 @@ div#mainContent {
     height: 2em;
     margin: 0;
     padding: 0;
-    color: #B2EBF2;
+    color: #B3E5FC;
     text-shadow: 1px 1px 1px #212121; }
 
 #sideNav.active {
@@ -128,7 +128,7 @@ div#splash {
   div#splash h1, div#splash h2 {
     text-align: center;
     color: #616161;
-    text-shadow: 1px 1px 1px black, 2px 2px 2px #00838F, 3px 3px 3px #B2EBF2; }
+    text-shadow: 1px 1px 1px black, 2px 2px 2px #0288D1, 3px 3px 3px #B3E5FC; }
   div#splash h1 {
     font-size: 3em; }
   div#splash h2 {
@@ -150,7 +150,7 @@ div#profileText {
   padding: 0.5em;
   overflow: hidden;
   background-color: #424242;
-  color: #B2EBF2;
+  color: #B3E5FC;
   text-shadow: 1px 1px 1px #212121; }
   #profileCard img {
     margin: 2em auto;
@@ -228,7 +228,11 @@ PROJECTS STYLES
   #projects #tabs md-tabs-content-wrapper {
     background-color: transparent; }
   #projects #tabs md-content {
-    background-color: rgba(255, 255, 255, 0.6); }
+    background-color: rgba(255, 255, 255, 0); }
+    #projects #tabs md-content md-tab-item.md-tab,
+    #projects #tabs md-content h1,
+    #projects #tabs md-content p {
+      color: #B3E5FC; }
 
 #projects img {
   max-width: 80%;
@@ -243,10 +247,10 @@ Contact STYLES
   margin-right: 4em; }
   #contact p a, #contact p a:active, #contact p a:visited {
     color: #424242;
-    text-shadow: 1px 1px 1px #00838F;
+    text-shadow: 1px 1px 1px #0288D1;
     text-decoration: none; }
   #contact p a:hover {
-    color: #00BCD4; }
+    color: #4FC3F7; }
   #contact p i {
     margin-right: .5em;
     font-size: 3em; }
@@ -283,4 +287,4 @@ BLOG STYLES (Main Page)
     text-decoration: none; }
   #blogMain a:hover,
   #post a:hover {
-    text-shadow: 1px 1px 2px #B2EBF2; }
+    text-shadow: 1px 1px 2px #B3E5FC; }
