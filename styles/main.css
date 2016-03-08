@@ -9,6 +9,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Russo One", Impact, "Arial Black", sans-serif; }
 
+p {
+  font-size: 1.5em; }
+
 *:focus {
   outline: none; }
 
@@ -16,24 +19,26 @@ li {
   list-style-type: none; }
 
 a, a:active, a:visited {
-  color: #212121;
+  color: #00BCD4;
+  text-shadow: 1px 1px 1px #212121;
   text-decoration: none; }
 
 a:hover {
-  text-shadow: 1px 1px 2px #B2EBF2; }
+  color: #424242;
+  text-shadow: 1px 1px 1px #212121; }
 
 div.md-subheader {
   background-color: #fff; }
   div.md-subheader .md-subheader-inner {
     padding: 5px 0px; }
   div.md-subheader .parallax-container {
-    height: 90px; }
+    height: 100px; }
   div.md-subheader .parallax h3 {
-    color: #616161;
-    text-shadow: 1px 1px 1px black, 2px 2px 2px white;
+    color: #B2EBF2;
+    text-shadow: 1px 1px 1px black, 2px 2px 2px #424242;
     font-size: 2em;
     position: relative;
-    z-index: 10;
+    z-index: 1;
     line-height: 2em;
     padding-left: 2em;
     margin: .7em 0; }
@@ -56,8 +61,7 @@ md-content#contact {
 md-content#skills,
 md-content#projects {
   background-color: #424242;
-  color: #B2EBF2;
-  text-shadow: 1px 1px 1px #212121; }
+  color: #B2EBF2; }
   md-content#skills .md-subheader-content,
   md-content#projects .md-subheader-content {
     background-color: #424242; }
@@ -123,8 +127,8 @@ div#splash {
     padding: 2em; }
   div#splash h1, div#splash h2 {
     text-align: center;
-    color: #B2EBF2;
-    text-shadow: 2px 2px 2px black, 3px 3px 3px #B2EBF2, 5px 5px 5px #212121; }
+    color: #616161;
+    text-shadow: 1px 1px 1px black, 2px 2px 2px #00838F, 3px 3px 3px #B2EBF2; }
   div#splash h1 {
     font-size: 3em; }
   div#splash h2 {
@@ -133,12 +137,13 @@ div#splash {
 /* Profile Card Styling*/
 div#profileText {
   text-align: right;
-  margin-top: 4em; }
+  margin-top: 4em;
+  padding-right: 3em; }
   div#profileText h3 {
+    font-size: 2em;
     padding: 0.5em; }
   div#profileText p {
-    padding: 0.5em;
-    font-size: 1.5em; }
+    padding: 0.5em; }
 
 #profileCard {
   text-align: center;
@@ -203,10 +208,13 @@ SKILLS STYLES
   line-height: 2em;
   display: inline-block;
   white-space: nowrap; }
+  #skills li ul {
+    flex-align: center; }
   #skills li img {
     max-height: 100%;
-    max-width: 2em;
-    vertical-align: middle; }
+    max-width: 3em;
+    vertical-align: middle;
+    margin-right: 2em; }
   #skills li p {
     display: inline-block;
     line-height: 2em;
@@ -220,10 +228,28 @@ PROJECTS STYLES
   #projects #tabs md-tabs-content-wrapper {
     background-color: transparent; }
   #projects #tabs md-content {
-    background-color: rgba(255, 255, 255, 0.25); }
+    background-color: rgba(255, 255, 255, 0.6); }
 
 #projects img {
-  max-width: 100%; }
+  max-width: 80%;
+  margin: 10px auto;
+  display: block; }
+
+/*
+Contact STYLES
+*/
+#contact p {
+  display: inline-block;
+  margin-right: 4em; }
+  #contact p a, #contact p a:active, #contact p a:visited {
+    color: #424242;
+    text-shadow: 1px 1px 1px #00838F;
+    text-decoration: none; }
+  #contact p a:hover {
+    color: #00BCD4; }
+  #contact p i {
+    margin-right: .5em;
+    font-size: 3em; }
 
 /*
 BLOG STYLES (Main Page)
