@@ -45,6 +45,8 @@ div.md-subheader {
 
 md-content {
   min-height: 100%; }
+  md-content > div {
+    padding: 10px; }
 
 md-content#splash {
   background-color: transparent; }
@@ -200,6 +202,15 @@ div#profileText {
   #profileCard.active div#aboutMe a,
   #profileCard:hover div#aboutMe a {
     color: inherit; }
+
+/*
+Experience
+*/
+#experience h4, #experience h6 {
+  padding: 1.5em; }
+
+#experience p {
+  font-size: 1.1em; }
 
 /*
 SKILLS STYLES
